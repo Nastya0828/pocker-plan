@@ -1,0 +1,49 @@
+.statuscard {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pickcard {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: lightsalmon;
+}
+
+.instruct {
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.25rem;
+    background-color: #7B68EE;
+}
+
+.select{
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color:  aquamarine;
+   
+}
+
+.mapLayout { 
+    margin: 5px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight:bold
+}

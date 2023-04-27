@@ -1,0 +1,18 @@
+.select{
+    width: 400px;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color:  aquamarine;
+   
+}
+
+.mapLayout { 
+    margin: 5px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight:bold
+}
