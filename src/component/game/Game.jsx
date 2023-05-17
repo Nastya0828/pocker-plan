@@ -3,6 +3,7 @@ import './Game.css';
 import Card from '../card/Card';
 import { useState,  useContext } from 'react';
 import {ChoosenCard} from '../../context/ChosenCard';
+import {MapLayout} from '../../context/MapLayout';
 import MySelect from '../select/MySelect';
 
 const Game = () => {
@@ -11,9 +12,11 @@ const Game = () => {
   const [selectedCard, setSelectedCard] = useState()
   const [status, setStatus] = useState(false)
   const [chosenCard, setChosenCard] = useContext(ChoosenCard);
+  const [mapLayout, setMapLayout] = useContext(MapLayout);
 
   const updateMap = (alignment) => {
     setCards(alignment)
+    setMapLayout(alignment)
   }
 
   const updateCard = (card) => {
@@ -39,7 +42,7 @@ const Game = () => {
 
       <div>
         {status
-          ? <div className ='instruct'>Карта выбрана {selectedCard}</div>
+          ? <div className ='instruct'>Карта {selectedCard} выбрана</div>
           : <div className ='instruct'> Выберите свою карту из поля ниже</div>
         }
       </div>
